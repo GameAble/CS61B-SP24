@@ -2,14 +2,14 @@ import java.util.ArrayList;
 import java.util.List;
 public class JavaExercises {
     public static int[] makeDice(){
-        return new int[]{1,2,3,4,5};
+        return new int[]{1,2,3,4,5,6};
     }
     public static String[] takeOrder(String name){
         String[] Ergun={"beyti", "pizza", "hamburger", "tea"};
         String[] Erik={"sushi", "pasta", "avocado", "coffee"};
-        if(name.equals(Ergun)){
+        if(name.equals("Ergun")){
             return Ergun;
-        }else if(name.equals(Erik)){
+        }else if(name.equals("Erik")){
             return Erik;
         }else{
             return new String[3];
@@ -36,7 +36,6 @@ public class JavaExercises {
         List<Integer> list =new ArrayList<>();
         list.add(n);
         if(n==1) {
-            list.add(1);
             return list;
         }
         if(n%2==0){

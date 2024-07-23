@@ -66,5 +66,14 @@ public class JavaExercisesTest {
         assertThat(result).isNotNull();
         assertThat(result).containsExactly(20, 10, 5, 16, 8, 4, 2, 1);
     }
+    @Test
+    @Order(3)
+    @DisplayName("Test Hailstone correctness")
+    public void testHailstone_2() {
+        List<Integer> result = JavaExercises.hailstone(1);
+
+        assertThat(result).isNotNull();
+        assertThat(result).containsExactly(1);
+    }
 
 }

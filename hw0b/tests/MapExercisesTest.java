@@ -59,5 +59,24 @@ public class MapExercisesTest {
             "cs61b", 1
         );
     }
+    @Test
+    @Order(3)
+    @DisplayName("Test countWords_2 correctness")
+    public void testCountWords_2() {
+        List<String> lst = List.of(
+                "hug", "hug", "hug", "hug",
+                "shreyas", "shreyas", "shreyas",
+                "ergun", "ergun",
+                "cs61b"
+        );
 
+        Map<String, Integer> map = MapExercises.countWords_2(lst);
+
+        assertThat(map).containsExactly(
+                "hug", 4,
+                "shreyas", 3,
+                "ergun", 2,
+                "cs61b", 1
+        );
+    }
 }
